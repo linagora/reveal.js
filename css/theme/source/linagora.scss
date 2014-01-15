@@ -1,0 +1,47 @@
+/**
+ * Corporate theme by Linagora for reveal.js.
+ * Author: Vincent Zurczak
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../../lib/font/league_gothic-webfont.eot');
+	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #eaeaea;
+$headingColor: #cd1f48;
+$linkColor: #cd1f48;
+$mainColor: #000;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+/*********************
+* Linagora LOGO  
+**********************/
+.reveal {
+	background-image: url('images/linagora-logo.gif');
+	background-size: 160px;
+	background-position: 2% 97%;
+	background-repeat: no-repeat;
+}
